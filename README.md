@@ -4,7 +4,13 @@ To use this, you need a photoresistor and 1uF capacitor. It should be noted that
 
 I added a GPIO header to my Raspberry PI Zero for the aforemenitoned sensor.
 
-Once you've added your sensor, log into your MotionEyeOS device, and cd to /data. I created a directory: /data/ToD, to store the state file. The python script will set the initial state to "", which ensures the correct configuration will be copied on your first run. Place the ToD.py script in /data/Tod.py.
+Once you've added your sensor, log into your MotionEyeOS device, and cd to /data.
+
+I created a directory, /data/ToD, to store the state file. Should you wish to use a different state directory, you'll need to modify the script to reflect that. Otherwise, this script will repeatedly update/restart the MotionEyeOS server.
+
+The python script will set the initial state to "", which ensures the correct configuration will be copied on your first run.
+
+Place the script in /data/ToD.py.
 
 You also need to create the following files:
 
