@@ -1,4 +1,4 @@
-This is a modified python script using Pi My Life Up's simple GPIO LDR tutorial (https://pimylifeup.com/raspberry-pi-light-sensor/) in combination with Murry's sunrise/sunset code (https://blog.ligos.net/2016-04-18/Day-Night-Cycle-For-MotionEye.html) to change the MotionEyeOS camera configuration based upon time of day.
+This is a modified python script using Pi My Life Up's simple GPIO LDR tutorial (https://pimylifeup.com/raspberry-pi-light-sensor/) in combination with Murry's sunrise/sunset code (https://blog.ligos.net/2016-04-18/Day-Night-Cycle-For-MotionEye.html) to change the MotionEyeOS camera configuration based upon available light.
 
 To use this, you need a photoresistor and 1uF capacitor. It should be noted that I used what I had laying around, in this case a 100uF capacitor. Therefore, if you use the 1uF capacitor, you'll need to adjust your thresshold accordingly.
 
@@ -23,4 +23,6 @@ Once your files are created, it's a matter of adding a cron job:
 
 EDITOR=nano crontab -e
 02,07,12,17,22,27,32,37,42,47,52,57 * * * * /usr/bin/python /data/ToD.py >> /var/log/daynight.log
+
+P.s. I probably should have changed the name, since this is light dependent as opposed to Time of Day dependent.
 
