@@ -1,6 +1,6 @@
 This is a modified python script using Pi My Life Up's simple GPIO LDR tutorial (https://pimylifeup.com/raspberry-pi-light-sensor/) in combination with Murry's sunrise/sunset code (https://blog.ligos.net/2016-04-18/Day-Night-Cycle-For-MotionEye.html) to change the MotionEyeOS camera configuration based upon time of day.
 
-To use this, you need a photoresistor and 1uF capacitor. It should be noted that I used what I had laying around, in this case a 100uF capacitor. Therefore, if you use the 1uF capacitor, you'll need to adjust your thresshold acordingly.
+To use this, you need a photoresistor and 1uF capacitor. It should be noted that I used what I had laying around, in this case a 100uF capacitor. Therefore, if you use the 1uF capacitor, you'll need to adjust your thresshold accordingly.
 
 I added a GPIO header to my Raspberry PI Zero for the aforemenitoned sensor.
 
