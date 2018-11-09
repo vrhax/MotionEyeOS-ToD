@@ -19,7 +19,7 @@ GPIO.setmode(GPIO.BOARD)
 
 #define the pin that goes to the circuit
 pin_to_circuit = 7
-thresshold = 7500
+threshold = 7500
 
 #Current state of day / night is stored in this file
 dayAndNightStateFile = '/data/ToD/dayornight'
@@ -85,7 +85,7 @@ try:
         print "Checking ..."
         rvalue = rc_time(pin_to_circuit)
         fileDayOrNight = readLineOfFile(dayAndNightStateFile)
-        if rvalue > thresshold:
+        if rvalue > threshold:
                 currentDayOrNight = "night"
         else:
                 currentDayOrNight = "day"
